@@ -23,3 +23,26 @@ Para cada caso imprimir el resultado en pantalla.
 
 print('Ejercicios de práctica con números')
 # Empezar aquí la resolución del ejercicio
+
+numero_1 = int(input('Ingrese el primer número:'))
+
+numero_2 = int(input('Ingrese el segundo número:'))
+
+numero_3 = int(input('Ingrese el tercer número:'))
+
+if numero_1 % 2 == 0:
+    print('el primer número ingresado es par')
+else:
+    print('el primer número ingresado es impar')
+
+
+if numero_2 % 2 == 0:
+    print('el primer número ingresado es par')
+else:
+    print('el primer número ingresado es impar')
+
+
+if numero_3 % 2 == 0:
+    print('el primer número ingresado es par')
+else:
+    print('el primer número ingresado es impar')

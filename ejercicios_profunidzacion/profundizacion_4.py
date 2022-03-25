@@ -33,3 +33,73 @@ contenido.
 
 print('Ejercicios de práctica con cadenas')
 # Empezar aquí la resolución del ejercicio
+
+# ingreso de palabras (3)
+
+palabra_1 = input('Ingrese la primera palabra:')
+
+palabra_2 = input('Ingrese la segunda palabra:')
+
+palabra_3 = input('Ingrese la tercer palabra:')
+
+metodo_orden = int(input('Ingrese el método de ordenación (1/2)'))
+
+# ordenamiento alfabético
+
+if metodo_orden == 1:
+    if (palabra_1 < palabra_2) and (palabra_1 < palabra_3):
+        print('Primera Palabra:',palabra_1)
+        if (palabra_2 < palabra_3):
+            print('Segunda Palabra:',palabra_2)
+            print('Tercer Palabra:',palabra_3)
+        else:
+            print('Segunda Palabra:',palabra_3)
+            print('Tercer Palabra:',palabra_2)
+    elif (palabra_2 < palabra_1) and (palabra_2 < palabra_3):
+        print('Primera Palabra:',palabra_2)
+        if (palabra_1 < palabra_3):
+            print('Segunda Palabra:',palabra_1)
+            print('Tercer Palabra:',palabra_3)
+        else:
+            print('Segunda Palabra:',palabra_3)
+            print('Tercer Palabra:',palabra_1)
+    elif (palabra_3 < palabra_1) and (palabra_3 < palabra_2):
+        print('Primera Palabra:',palabra_3)
+        if (palabra_1 < palabra_2):
+            print('Segunda Palabra:',palabra_1)
+            print('Tercer Palabra:',palabra_2)
+        else:
+            print('Segunda Palabra:',palabra_2)
+            print('Tercer Palabra:',palabra_1)
+
+# ordenamiento por cantidad de letras de palabras
+
+cant_letras_palabra_1 = len(palabra_1)
+cant_letras_palabra_2 = len(palabra_2)
+cant_letras_palabra_3 = len(palabra_3)
+
+if metodo_orden == 2:
+    if (cant_letras_palabra_1 < cant_letras_palabra_2) and (cant_letras_palabra_1 < cant_letras_palabra_3):
+        print('Primera Palabra:',palabra_1)
+        if (cant_letras_palabra_2 < cant_letras_palabra_3):
+            print('Segunda Palabra:',palabra_2)
+            print('Tercer Palabra:',palabra_3)
+        else:
+            print('Segunda Palabra:',palabra_3)
+            print('Tercer Palabra:',palabra_2)
+    elif (cant_letras_palabra_2 < cant_letras_palabra_1) and (cant_letras_palabra_2 < cant_letras_palabra_3):
+        print('Primera Palabra:',palabra_2)
+        if (cant_letras_palabra_1 < cant_letras_palabra_3):
+            print('Segunda Palabra:',palabra_1)
+            print('Tercer Palabra:',palabra_3)
+        else:
+            print('Segunda Palabra:',palabra_3)
+            print('Tercer Palabra:',palabra_1)
+    elif (cant_letras_palabra_3 < cant_letras_palabra_1) and (cant_letras_palabra_3 < cant_letras_palabra_2):
+        print('Primera Palabra:',palabra_3)
+        if (cant_letras_palabra_1 < cant_letras_palabra_2):
+            print('Segunda Palabra:',palabra_1)
+            print('Tercer Palabra:',palabra_2)
+        else:
+            print('Segunda Palabra:',palabra_2)
+            print('Tercer Palabra:',palabra_1)
